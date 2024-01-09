@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <!--- Custom CSS --->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome styling -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="container">
+                <p>Movie<span>Spot.</span></p>
+            </div>
+        </div>
+        <!-- End of Logo -->
+
+        <!-- search container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <div class="merge-tog">
+                    <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box" onkeyup="findMovies()">
+                    <button class="normal">Search</button>
+                </div>
+                <div class="search-list" id="search-list">
+                    <!-- List here -->
+                    <!--<div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="assassins-creed-valhalla.jpg" alt="">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Assassins Creed Valhalla Vol. 1</h3>
+                            <p>2018</p>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <!-- End of search container -->
+
+        <!-- result container-->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!--- movie information here --->
+                    <div class="movie-poster">
+                        <img src="assassins-creed-valhalla.jpg" alt="movie poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Assassins Creed Valhalla Vol. 1</h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year: 2018</li>
+                            <li class="rated">Ratings: PG-13</li>
+                            <li class="runtime">Runtime: 137 mins</li>
+                        </ul>
+                        <button onclick="window.location.href='details.html';">View Details...</button>
+                    </div>
+                </div>
+                <!-- Pagination-->
+                <div class="pagination">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#"><i class="fal fa-long-arrow-alt-right">Next...</i></a>
+                </div>
+                <!-- End of Pagination-->
+            </div>
+        </div>
+        <!-- End of result container-->
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <div class="footer-container">
+                <p>Movie<span>Spot.</span></p>
+            </div>
+            <div class="footer-homepage">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="copyright">
+                <p>@2023 Brightone</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--- Main app js --->
+    <script src="main.js"></script>
+</body>
+</html>
